@@ -1,0 +1,179 @@
+html {
+  overflow-y: scroll; }
+
+body {
+  height: 100vh; }
+  body.bg-img {
+    background-image: url("../Images/Angel devil mod DeviantArt.png");
+    background-position-y: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; }
+    @media screen and (max-width: 450px) {
+      body.bg-img {
+        background-position-y: 10px;
+        background-position-x: -120px; } }
+  body main .welcome-title {
+    font-size: 8rem; }
+    @media screen and (max-width: 1250px) {
+      body main .welcome-title {
+        font-size: 5rem; } }
+    @media screen and (max-width: 450px) {
+      body main .welcome-title {
+        font-size: 4rem; } }
+  body main .caption {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white; }
+    @media screen and (max-width: 450px) {
+      body main .caption {
+        justify-content: center;
+        height: 150vh; } }
+  body main .caption-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border: 2px solid white;
+    border-radius: 100px; }
+  body main.gallery-contenedor {
+    padding-top: 116px; }
+  body main .titleh1 {
+    font-size: 4rem;
+    margin: 20px; }
+  body main .center {
+    text-align: center; }
+  body main .abouth2 {
+    text-align: center; }
+  body main .contenedor {
+    margin: 50px 200px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "box1 box2" "box3 box4"; }
+    @media screen and (max-width: 1250px) {
+      body main .contenedor {
+        padding: 0px 40px;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "box1" "box2" "box4" "box3"; } }
+    @media screen and (max-width: 450px) {
+      body main .contenedor {
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "box1" "box2" "box4" "box3"; } }
+  body main .box {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  body main .box-1 {
+    grid-area: box1; }
+  body main .box-2 {
+    grid-area: box2;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 20px; }
+  body main .box-3 {
+    grid-area: box3;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 20px; }
+  body main .box-4 {
+    grid-area: box4; }
+  body main .contact-main-box {
+    padding-top: 116px;
+    display: flex; }
+    @media screen and (max-width: 1250px) {
+      body main .contact-main-box {
+        flex-direction: column; } }
+  body main .contact-us {
+    padding-bottom: 50px;
+    font-size: 45px; }
+  body main .contact-us-items {
+    margin-bottom: 20px; }
+  body main .contact-left {
+    width: 50%;
+    background-color: tomato;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center; }
+    @media screen and (max-width: 1250px) {
+      body main .contact-left {
+        width: 100%;
+        text-align: center;
+        align-items: center; } }
+  body main .contact-right {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (max-width: 1250px) {
+      body main .contact-right {
+        width: 100%;
+        text-align: center;
+        align-items: center; } }
+  body main .contac-left-right {
+    height: 700px;
+    padding: 50px; }
+  body main .contact-right-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  body main .contact-right-info {
+    width: 100%; }
+  body main .contact-right-info .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+  body main .contact-right-info .top input {
+    width: 45%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid #e3e3e3;
+    outline-color: tomato;
+    border-radius: 5px; }
+  body main .contact-right-info textarea {
+    width: 100%;
+    font-size: 20px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid #e3e3e3;
+    outline-color: tomato;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    resize: none; }
+  body main .contact-right-info button {
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px; }
+  body main .h3-item {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 1.5rem; }
+  body main .icons {
+    font-size: 30px; }

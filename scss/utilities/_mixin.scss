@@ -1,0 +1,17 @@
+//media queries
+@mixin responsive {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet {
+  @media screen and (max-width: 1250px) {
+    @content;
+  }
+}
+@mixin flex {
+  display: flex;
+}
+
+

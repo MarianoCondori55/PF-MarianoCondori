@@ -1,0 +1,229 @@
+@import "utilities/mixin";
+@import "utilities/variables";
+html {
+  overflow-y: scroll;
+}
+
+body {
+  height: 100vh;
+  &.bg-img {
+    background-image: url("../Images/Angel\ devil\ mod\ DeviantArt.png");
+    background-position-y: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    @include responsive {
+      background-position-y: 10px;
+      background-position-x: -120px;
+    }
+  }
+
+  main {
+    // home
+    .welcome-title {
+      font-size: 8rem;
+      @include responsive-tablet {
+        font-size: 5rem;
+      }
+      @include responsive {
+        font-size: 4rem;
+      }
+    }
+    .caption {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      @include responsive {
+        justify-content: center;
+        height: 150vh;
+      }
+    }
+    .caption-link {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 2rem;
+      border: 2px solid white;
+      border-radius: 100px;
+    }
+    //Gallery
+    &.gallery-contenedor {
+      padding-top: 116px;
+    }
+    //About
+    .titleh1 {
+      font-size: 4rem;
+      margin: 20px;
+    }
+    .center {
+      text-align: center;
+    }
+    .abouth2 {
+      text-align: center;
+    }
+    .contenedor {
+      margin: 50px 200px;
+      display: grid;
+      text-align: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "box1 box2"
+        "box3 box4";
+      @include responsive-tablet {
+        padding: 0px 40px;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "box1"
+          "box2"
+          "box4"
+          "box3";
+      }
+      @include responsive {
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "box1"
+          "box2"
+          "box4"
+          "box3";
+      }
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box-1 {
+      grid-area: box1;
+    }
+    .box-2 {
+      grid-area: box2;
+      display: flex;
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 20px;
+    }
+    .box-3 {
+      grid-area: box3;
+      display: flex;
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 20px;
+    }
+    .box-4 {
+      grid-area: box4;
+    }
+    //Contact
+    .contact-main-box {
+      padding-top: 116px;
+      display: flex;
+      @include responsive-tablet {
+        flex-direction: column;
+      }
+    }
+    .contact-us {
+      padding-bottom: 50px;
+      font-size: 45px;
+    }
+    .contact-us-items {
+      margin-bottom: 20px;
+    }
+    .contact-left {
+      width: 50%;
+      background-color: tomato;
+      display: flex;
+      color: $blanco;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      justify-content: center;
+      @include responsive-tablet {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+    }
+    .contact-right {
+      display: flex;
+      width: 50%;
+      background-color: $blanco;
+      flex-direction: column;
+      justify-content: center;
+      @include responsive-tablet {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+    }
+    .contac-left-right {
+      height: 700px;
+      padding: 50px;
+    }
+    .contact-right-info {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-right-info {
+      width: 100%;
+    }
+    .contact-right-info .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .contact-right-info .top input {
+      width: 45%;
+      font-size: 20px;
+      padding: 10px;
+      border: 2px solid #e3e3e3;
+      outline-color: tomato;
+      border-radius: 5px;
+    }
+    .contact-right-info textarea {
+      width: 100%;
+      font-size: 20px;
+      height: 300px;
+      padding: 10px;
+      border: 2px solid #e3e3e3;
+      outline-color: tomato;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      resize: none;
+    }
+    .contact-right-info button {
+      background: tomato;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 20px 40px;
+      border: none;
+      border-radius: 5px;
+    }
+    .h3-item {
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+    .icons {
+      font-size: 30px;
+    }
+  }
+}
