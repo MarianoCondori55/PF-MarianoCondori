@@ -1,7 +1,11 @@
 @import "utilities/mixin";
 @import "utilities/variables";
 html {
-  overflow-y: scroll;
+  overflow-y: overlay;
+  overflow-x: overlay;
+  &.index {
+    overflow-y: scroll;
+  }
 }
 
 body {
@@ -55,6 +59,10 @@ body {
     //Gallery
     &.gallery-contenedor {
       padding-top: 116px;
+    }
+    .modalContainer {
+      overflow-y: hidden;
+      background-color: red;
     }
     //About
     .titleh1 {
@@ -224,6 +232,10 @@ body {
     }
     .icons {
       font-size: 30px;
+    }
+    //shop
+    &.shopContainer {
+      overflow: hidden;
     }
   }
 }

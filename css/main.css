@@ -1,5 +1,8 @@
 html {
-  overflow-y: scroll; }
+  overflow-y: overlay;
+  overflow-x: overlay; }
+  html.index {
+    overflow-y: scroll; }
 
 body {
   height: 100vh; }
@@ -44,6 +47,9 @@ body {
     border-radius: 100px; }
   body main.gallery-contenedor {
     padding-top: 116px; }
+  body main .modalContainer {
+    overflow-y: hidden;
+    background-color: red; }
   body main .titleh1 {
     font-size: 4rem;
     margin: 20px; }
@@ -177,3 +183,5 @@ body {
     font-size: 1.5rem; }
   body main .icons {
     font-size: 30px; }
+  body main.shopContainer {
+    overflow: hidden; }
